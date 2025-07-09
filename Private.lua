@@ -2,42 +2,6 @@ if not game then
     error("This script must be run in a Roblox environment.")
 end
 
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
- 
-local Window = Rayfield:CreateWindow({
-   Name = "c00lkidd's private gui",
-   Icon = 130386628476315, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "c00lkidd's private gui",
-   LoadingSubtitle = "by c00lkidd",
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
- 
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
- 
-   ConfigurationSaving = {
-      Enabled = false,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
-   },
- 
-   Discord = {
-      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "Teamc00lkidd", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-   },
- 
-   KeySystem = true, -- Set this to true to use our key system
-   KeySettings = {
-      Title = "join discord for key, this script can be used for other games.",
-      Subtitle = "Enter Key",
-      Note = "Go into #key for the key you want discord.gg/Teamc00lkidd", -- Use this to tell the user how to get a key
-      FileName = "Teamz", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"c00lkiddssecretkey","dyskord","quijk","F5w20s","27jUkl","jkiO92w", "yoda", "coolkid"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
-   }
-})
- 
 local MainTab = Window:CreateTab("trolling scripts", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Troll")
  
@@ -126,14 +90,14 @@ local Button = MainTab:CreateButton({
    end,
 })
  
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "FE Bypasser (Might not work)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/mYwPGMja"))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Coolgui (Combat) 3939",
    Callback = function()
   loadstring(game:HttpGet("https://pastebin.com/raw/tQZYjYV0"))()
@@ -148,56 +112,56 @@ local Button = MainTab:CreateButton({
    end,
 })
  
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Wisl FE",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/wisl884/wisl-i-Universal-Project1/main/Wisl'i%20Universal%20Project.lua", true))()
       end,
    })
  
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "NullFire NDS (OP)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
       end,
    })
  
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Swamp Monster Hub (op)",
    Callback = function()
    loadstring(game:HttpGet("https://pastefy.app/2tC7nRAK/raw"))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Fe ball reimagined",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/KaterHub-Inc/scripts/refs/heads/main/unofficial-Projects/FEHamsterBall.lua"))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Zer0 Gravity (jump to gain back gravity)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/refs/heads/main/zerogravity"))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Unanchored parts controller",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/v0c0n1337/scripts/refs/heads/main/Unachored_parts_controller_v2.lua.txt"))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Gravity controller",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/sGwb50iV", true))()
       end,
    })
 
-local Buttton = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "i8i8d2d2's client part spawner (inf jump and more)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/PlaneGT/skibidi/refs/heads/main/Script"))()
@@ -389,102 +353,6 @@ local Button = TsbTab:CreateButton({
 })
  
 local Button = OtherTab:CreateButton({
-   Name = "RTX",
-   Callback = function()
-   local Lighting = game:GetService("Lighting")
-local Workspace = game:GetService("Workspace")
- 
--- bye old sky stuff
-for _, v in ipairs(Lighting:GetChildren()) do
-    if v:IsA("PostEffect") then
-        v:Destroy() -- yes
-    end
-end
- 
--- lighting settings
-Lighting.Brightness = 1.9 -- brightness for glow
-Lighting.GlobalShadows = true
-Lighting.EnvironmentDiffuseScale = 1
-Lighting.EnvironmentSpecularScale = 1.6 -- extra shine
-Lighting.ExposureCompensation = -0.03 -- just a bit darker to balance shine
- 
--- effects
-local function addEffects()
-    local sun = Instance.new("SunRaysEffect", Lighting)
-    sun.Intensity = 0.1 -- slightly stronger
-    sun.Spread = 0.2
- 
-    local bloom = Instance.new("BloomEffect", Lighting)
-    bloom.Intensity = 0.7 -- bloom for glow
-    bloom.Size = 64
-    bloom.Threshold = 2.5
- 
-    local cc = Instance.new("ColorCorrectionEffect", Lighting)
-    cc.Brightness = -0.03
-    cc.Contrast = 0.15
-    cc.Saturation = 0.1
-    cc.TintColor = Color3.fromRGB(255, 255, 255)
- 
-    local dof = Instance.new("DepthOfFieldEffect", Lighting)
-    dof.FarIntensity = 0.05
-    dof.FocusDistance = 100
-    dof.InFocusRadius = 60
-    dof.NearIntensity = 0.2
- 
-    -- blur effect
-    local blur = Instance.new("BlurEffect", Lighting)
-    blur.Size = 8 -- more blur
- 
-    local atmo = Instance.new("Atmosphere", Lighting)
-    atmo.Density = 0.28
-    atmo.Offset = 0.15
-    atmo.Glare = 0.85
-    atmo.Haze = 0.55
-    atmo.Color = Color3.fromRGB(180, 200, 220)
-    atmo.Decay = Color3.fromRGB(95, 100, 115)
-end
- 
-addEffects()
- 
--- more shine
-for _, part in ipairs(Workspace:GetDescendants()) do
-    if part:IsA("BasePart") then
-        part.Material = Enum.Material.SmoothPlastic
-        part.Reflectance = 0.2 -- reflectance for shininess
-    end
-end
- 
-local dayLength = 150
-local nightLength = 300
-local timeStep = 0.03
- 
-spawn(function()
-    while true do
-        -- day shiny!
-        Lighting.Ambient = Color3.fromRGB(80, 80, 80)
-        Lighting.OutdoorAmbient = Color3.fromRGB(115, 115, 115)
-        for t = 6, 18, timeStep do
-            Lighting.ClockTime = t
-            wait((dayLength / (18 - 6)) * timeStep)
-        end
- 
-        -- night dark??
-        Lighting.Ambient = Color3.fromRGB(30, 30, 30)
-        Lighting.OutdoorAmbient = Color3.fromRGB(50, 50, 50)
-        for t = 18, 24, timeStep do
-            Lighting.ClockTime = t
-            wait((nightLength / (24 - 18)) * timeStep)
-        end
-        for t = 0, 6, timeStep do
-            Lighting.ClockTime = t
-            wait((nightLength / 6) * timeStep)
-        end
-    end
-end)
-   end,
-})
- 
-local Button = OtherTab:CreateButton({
    Name = "Fast Leave (kick yourself basically)",
    Callback = function()
    game.Players.LocalPlayer:Kick("Spooky Scary Skeletons")
@@ -532,14 +400,6 @@ local Slider = PlayerTab:CreateSlider({
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-   end,
-})
-
-local Button = GrowAGardenTab:CreateButton({
-   Name = "pet spawner",
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/thundarzz/Grow-a-Garden-Pet-Spawner/refs/heads/main/Pet-spawn"))()
-   Callback = function()
- 
    end,
 })
 
