@@ -350,6 +350,55 @@ local RayfieldLibrary = {
 			PlaceholderColor = Color3.fromRGB(140, 160, 160)
 		},
 
+
+Red = {
+			TextColor = Color3.fromRGB(255, 220, 220),
+
+			Background = Color3.fromRGB(30, 10, 10),
+            Topbar = Color3.fromRGB(45, 15, 15),
+            Shadow = Color3.fromRGB(20, 5, 5),
+
+			NotificationBackground = Color3.fromRGB(45, 20, 20),
+            NotificationActionsBackground = Color3.fromRGB(255, 220, 220),
+
+            TabBackground = Color3.fromRGB(70, 20, 20),
+            TabStroke = Color3.fromRGB(100, 25, 25),
+            TabBackgroundSelected = Color3.fromRGB(220, 50, 50),
+            TabTextColor = Color3.fromRGB(255, 200, 200),
+            SelectedTabTextColor = Color3.fromRGB(60, 15, 15),
+
+
+            ElementBackground = Color3.fromRGB(50, 15, 15),
+            ElementBackgroundHover = Color3.fromRGB(70, 20, 20),
+            SecondaryElementBackground = Color3.fromRGB(55, 10, 10),
+            ElementStroke = Color3.fromRGB(90, 25, 25),
+            SecondaryElementStroke = Color3.fromRGB(80, 20, 20),
+
+			
+            SliderBackground = Color3.fromRGB(120, 20, 20),
+            SliderProgress = Color3.fromRGB(200, 40, 40),
+            SliderStroke = Color3.fromRGB(255, 60, 60),
+
+		
+            ToggleBackground = Color3.fromRGB(50, 15, 15),
+            ToggleEnabled = Color3.fromRGB(220, 50, 50),
+            ToggleDisabled = Color3.fromRGB(80, 25, 25),
+            ToggleEnabledStroke = Color3.fromRGB(255, 60, 60),
+            ToggleDisabledStroke = Color3.fromRGB(100, 35, 35),
+            ToggleEnabledOuterStroke = Color3.fromRGB(150, 35, 35),
+            ToggleDisabledOuterStroke = Color3.fromRGB(70, 20, 20),
+
+			
+            DropdownSelected = Color3.fromRGB(70, 20, 20),
+            DropdownUnselected = Color3.fromRGB(45, 15, 15),
+
+			
+            InputBackground = Color3.fromRGB(50, 15, 15),
+            InputStroke = Color3.fromRGB(90, 25, 25),
+            PlaceholderColor = Color3.fromRGB(200, 120, 120)
+		},
+
+				
 		AmberGlow = {
 			TextColor = Color3.fromRGB(255, 245, 230),
 
